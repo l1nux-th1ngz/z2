@@ -9,6 +9,7 @@ sudo apt-get update
 # Install Nemo and User Directories
 # =========================
 sudo apt-get -y install nemo --no-install-recommends xdg-user-dirs xdg-user-dirs-gtk
+
 # =========================
 # Build Directories
 # =========================
@@ -22,6 +23,7 @@ sleep 2
 # =========================
 # Set locale for user directories
 # =========================
+mkdir -p ~/.config
 echo "en_US.UTF-8" > ~/.config/user-dirs.locale
 
 # =========================
@@ -39,13 +41,14 @@ echo "Copying Hypr executable to /usr/bin..."
 sudo cp ./build/Hypr /usr/bin/
 echo "Adding Hypr to display sessions..."
 sudo cp ./example/hypr.desktop /usr/share/xsessions/
+cd .. && rm -rf Hypr
 
 # =========================
-# Prompt user to choose default login environment
+# Set bspwm as default window manager
 # =========================
-sudo update-alternatives --install /usr/bin/x-window-manager x-window-manager /usr/bin/bspwm 100
-sudo update-alternatives --install /usr/bin/x-window-manager x-window-manager /usr/bin/Hypr 100
-sudo update-alternatives --config x-window-manager
+sudo update-alternatives --install /usr/bin/x-window-manager x-window-manager /usr/bin/bspwm 50
+sudo update-alternatives --auto x-window-manager
+
 # =========================
 # Final Update
 # =========================
