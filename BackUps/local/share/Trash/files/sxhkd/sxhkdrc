@@ -1,0 +1,172 @@
+
+#################################################################
+# SUPER + ... KEYS
+#################################################################
+
+# Webbrowser
+super + p
+    firefox
+
+# Terminal
+super + Return
+    terminator
+
+# dmenu
+super + d
+    dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=14'
+
+# nemo
+super + o
+    nemo
+
+# Evolution
+super + F9
+    evolution
+
+# Spotify
+super + F10
+    spotify
+
+# Rofi Fullscreen
+super + F11
+    rofi -theme-str 'window {width: 100%; height: 100%;}' -show drun
+
+# Rofi
+super + space
+    rofi -show drun
+
+# Rofi theme selector
+super + r
+    rofi-theme-selector
+
+# Urxvt
+super + t
+    urxvt
+
+
+#################################################################
+# CONTROL + ALT KEYS
+#################################################################
+
+# File-Manager
+ctrl + alt + b
+    nemo
+
+# Rofi theme selector
+ctrl + alt + r
+    rofi-theme-selector
+
+# Spotify
+ctrl + alt + s
+    spotify
+
+# Alacritty
+ctrl + alt + Return
+    alacritty
+
+ctrl + alt + t
+    alacritty
+
+
+#################################################################
+# ALT + ... KEYS
+#################################################################
+
+# Xlunch app launcher (disabled)
+# alt + F5
+#     xlunch --config ~/.config/xlunch/default.conf --input ~/.config/xlunch/entries.dsv   
+
+
+#################################################################
+# SCREENSHOTS
+#################################################################
+
+# Scrot
+Print
+    scrot 'ArcoLinux-%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f $$(xdg-user-dir PICTURES)'
+
+# Screenshooter
+ctrl + Print
+    xfce4-screenshooter
+
+# Gnome-Screenshot
+ctrl + shift + Print
+    gnome-screenshot -i
+
+
+#################################################################
+# FUNCTION KEYS
+#################################################################
+
+# xfce4-terminal dropdown
+F12
+    xfce4-terminal --drop-down
+
+
+#################################################################
+# MULTIMEDIA KEYS
+#################################################################
+
+# Raises volume
+XF86AudioRaiseVolume
+    amixer set Master 10%+
+
+# Lowers volume
+XF86AudioLowerVolume
+    amixer set Master 10%-
+
+# Mute
+XF86AudioMute
+    amixer -D pulse set Master 1+ toggle
+
+# PLAY
+XF86AudioPlay
+    playerctl play-pause
+
+# Next
+XF86AudioNext
+    playerctl next
+
+# Previous
+XF86AudioPrev
+    playerctl previous
+
+# Stop
+XF86AudioStop
+    playerctl stop
+
+# Brightness up
+XF86MonBrightnessUp
+    xbacklight -inc 10
+
+# Brightness down
+XF86MonBrightnessDown
+    xbacklight -dec 10
+
+
+#################################################################
+# POLYBAR
+#################################################################
+
+# Hide polybar
+super + y
+    polybar-msg cmd toggle
+
+
+#################################################################
+# DESKTOP SPECIFIC
+#################################################################
+
+# Picom Toggle
+ctrl + alt + o
+    ~/.config/hypr/scripts/picom-toggle.sh
+
+
+#################################################################
+# SUPER + SHIFT KEYS
+#################################################################
+
+# Reload hypr
+super + shift + r
+    touch ~/.config/hypr/hypr.conf
+

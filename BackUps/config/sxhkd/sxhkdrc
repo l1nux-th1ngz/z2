@@ -1,0 +1,93 @@
+#################################################################
+# SUPER + ... KEYS
+#################################################################
+
+super + Return
+    terminator
+
+super + p
+    brave-browser
+    
+super + f
+    firefox
+
+super + o
+    nemo
+
+super + d
+    	~/.config/dmenu/dmenu
+
+super + space
+		~/.config/rofi/scripts/rofi-familiar
+
+super + q
+    bspc node -c
+
+super + u
+      scratchpad.sh dropdown
+
+
+super + a
+	themes
+	
+#################################################################
+# CONTROL + ALT KEYS
+#################################################################
+
+ctrl + alt + del
+    ~/.config/lock.sh
+    
+ctrl + alt + Return
+    alacritty
+
+ctrl + alt + t
+    kitty
+    
+ctrl + alt + p
+    ~/.config/scripts/picom-toggle.sh
+
+ctrl + super + x
+	~/.config/rofi/scripts/nakedquit
+
+    
+#################################################################
+# MULTIMEDIA KEYS
+#################################################################
+ 
+
+
+# PLAY
+XF86AudioPlay
+    playerctl play-pause
+
+# Next
+XF86AudioNext
+    playerctl next
+
+# Previous
+XF86AudioPrev
+    playerctl previous
+
+
+# brightness: up | down
+XF86{MonBrightnessUp,MonBrightnessDown}
+	~/.config/scripts/display/brightness {up,down}
+
+# volume: up | down | mute
+XF86Audio{RaiseVolume,LowerVolume,Mute}
+	~/.config/scripts/sound/volume {up,down,mute}
+
+super + shift + {p,m,Return}
+	bash -c ~/.config/{scripts/sound/musik,switch,/rofi/rofi}
+{Print,super + Print}
+	bash -c ~/.config/scripts/shot/{shot-now,screenshot.sh}
+
+# powermenu | info battery
+super + {_,shift +} Delete
+	bash -c ~/.config/scripts/powermenu/{powermenu.sh,info-bat.sh}
+super + alt + Delete
+	bash -c ~/.config/scripts/powermenu/battery_status.sh
+
+# Push focused window to scratchpad (background)
+super + {_,shift +} a
+	~/.config/bspwm/scratchpad.sh {switch-app,toggle-flag}

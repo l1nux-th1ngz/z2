@@ -1,0 +1,37 @@
+2025/07/04-03:36:37.146 9e8e Reusing MANIFEST /home/test/.config/BraveSoftware/Brave-Browser/Default/Local Extension Settings/cjpalhdlnbpafiamejdnhcphjbkeiagm/MANIFEST-000001
+2025/07/04-03:36:37.146 9e8e Recovering log #11
+2025/07/04-03:36:37.147 9e8e Reusing old log /home/test/.config/BraveSoftware/Brave-Browser/Default/Local Extension Settings/cjpalhdlnbpafiamejdnhcphjbkeiagm/000011.log 
+2025/07/04-03:37:15.445 9e90 Level-0 table #15: started
+2025/07/04-03:37:15.459 9e90 Level-0 table #15: 4407006 bytes OK
+2025/07/04-03:37:15.474 9e90 Delete type=0 #11
+2025/07/04-03:38:12.161 9e8e Level-0 table #17: started
+2025/07/04-03:38:12.198 9e8e Level-0 table #17: 8042269 bytes OK
+2025/07/04-03:38:12.205 9e8e Delete type=0 #14
+2025/07/04-03:38:12.206 9e8e Compacting 4@0 + 1@1 files
+2025/07/04-03:38:12.217 9e8e Generated table #18@0: 6 keys, 2383757 bytes
+2025/07/04-03:38:12.231 9e8e Generated table #19@0: 8 keys, 2974660 bytes
+2025/07/04-03:38:12.242 9e8e Generated table #20@0: 3 keys, 2422703 bytes
+2025/07/04-03:38:12.281 9e8e Generated table #21@0: 2 keys, 5469536 bytes
+2025/07/04-03:38:12.290 9e8e Generated table #22@0: 7 keys, 1265179 bytes
+2025/07/04-03:38:12.290 9e8e Compacted 4@0 + 1@1 files => 14515835 bytes
+2025/07/04-03:38:12.297 9e8e compacted to: files[ 0 5 1 0 0 0 0 ]
+2025/07/04-03:38:12.297 9e8e Delete type=2 #10
+2025/07/04-03:38:12.297 9e8e Delete type=2 #12
+2025/07/04-03:38:12.297 9e8e Delete type=2 #7
+2025/07/04-03:38:12.297 9e8e Delete type=2 #15
+2025/07/04-03:38:12.297 9e8e Delete type=2 #17
+2025/07/04-03:38:12.299 9e8e Expanding@1 1+1 (2383757+4579931 bytes) to 5+1 (14515835+4579931 bytes)
+2025/07/04-03:38:12.299 9e8e Compacting 5@1 + 1@2 files
+2025/07/04-03:38:12.311 9e8e Generated table #23@1: 6 keys, 2383757 bytes
+2025/07/04-03:38:12.325 9e8e Generated table #24@1: 8 keys, 2974660 bytes
+2025/07/04-03:38:12.337 9e8e Generated table #25@1: 6 keys, 2833254 bytes
+2025/07/04-03:38:12.377 9e8e Generated table #26@1: 2 keys, 5469536 bytes
+2025/07/04-03:38:12.386 9e8e Generated table #27@1: 14 keys, 1267395 bytes
+2025/07/04-03:38:12.386 9e8e Compacted 5@1 + 1@2 files => 14928602 bytes
+2025/07/04-03:38:12.393 9e8e compacted to: files[ 0 0 5 0 0 0 0 ]
+2025/07/04-03:38:12.393 9e8e Delete type=2 #19
+2025/07/04-03:38:12.393 9e8e Delete type=2 #5
+2025/07/04-03:38:12.393 9e8e Delete type=2 #20
+2025/07/04-03:38:12.393 9e8e Delete type=2 #21
+2025/07/04-03:38:12.393 9e8e Delete type=2 #18
+2025/07/04-03:38:12.393 9e8e Delete type=2 #22

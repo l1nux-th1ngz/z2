@@ -1,0 +1,25 @@
+/*
+  GTK Theme Overrides
+  Purpose: Minimalist, shadowless, square-cornered windows.
+
+  NOTE:
+  Many GTK widgets use dynamic IDs (e.g., #pager-4). Use GTK Inspector to find the correct IDs:
+  Run: GTK_DEBUG=interactive <application_name>
+*/
+
+.window-frame,
+.window-frame:backdrop {
+  /* Remove shadows and borders */
+  box-shadow: none;
+  border: none;
+  margin: 0;
+  border-radius: 0;
+}
+
+.titlebar {
+  /* Square corners for titlebar */
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+}
+

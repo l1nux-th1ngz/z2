@@ -1,0 +1,32 @@
+#------------[ global variable do not Edit]
+THEME="iLight"
+WALLPAPER="DEFAULT"
+SSFRAME="#fdfdfd"
+PANELPOSITION="TOP"
+MUSIC="off"
+BRIGHTNESS=26
+
+#------------[ theme ]
+if [[ $THEME == "iLight" ]]; then
+	ICONDIR="$HOME/.config/bspwm/ilight/icons" 
+elif [[ $THEME == "iDark" ]]; then
+	ICONDIR="$HOME/.config/bspwm/idark/icons"
+fi
+
+#------------[ notifier directory ]
+NOTIFIER="$HOME/.config/bspwm/scripts/notify/notify-send.sh"
+
+#------------[ Network interface ]
+ETHERNETINT=$(ls /sys/class/net | grep ^e) #this will capture enpX or ethX
+WIRELESSINT=$(ls /sys/class/net | grep wl) #this will capture wlpX or wloX
+
+#------------[ Screen resolution ]
+RESOLUTION="1366x768"	#Available options : 1366x768 and 1920x1080
+
+# -----------[ Power Menu Command ]
+POWEROFF="systemctl poweroff"			#systemd default
+REBOOT="systemctl reboot"				#systemd default
+LOCK=
+LOGOUT="pkill -KILL -u $(whoami)"
+SLEEP="suspend"				#systemd default
+
